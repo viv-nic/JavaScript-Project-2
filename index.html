@@ -1,0 +1,103 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/stylesweather.css">
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Roboto:ital@1&display=swap" rel="stylesheet"> 
+	<title>Rock Paper Scissor</title>
+</head>
+<body>
+	<h3 id="welcome-msg"></h3>
+    
+
+    <div  id="welcome-screen">
+        <div id="user-info">
+            <!-- <label for="username">Your Name</label> -->
+            <input type="text" id="username" autocomplete=off name="username" placeholder="Enter your Name..."><br>
+            <a class="btn-enter">Hit it!</a>
+        </div>
+        <p class="narrative"></p>
+
+    </div>
+
+	<div id="container">
+	<div class="wrapper weatherapi">
+		<section class="card">
+			<div class="search">
+				<input type="text" class="search-bar" placeholder="Search" autocomplete="off">
+				<button>🔍</button>
+			</div>
+			<div class="weather loading">
+				<h2 class="city"> Weather in Denver</h2>
+				<h1 class="temp">34°C</h1>
+				<div class="flex">
+					<img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+					<div class="description">Cloudy</div>
+				</div>	
+				<div class="humidity">Humidity: 60%</div>
+				<div class="wind">wind speed: 6.2 km/h</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- <div class="wrapper">
+		<section>ddd</section>
+	</div> -->
+
+	<div class="wrapper">
+	<section class="game">
+		<!--Title -->
+		<h2 class="title">Rock Paper Scissor</h2>
+		
+		<!--Display Score of player and computer -->
+		<div class="score">
+			<div class="playerScore">
+				<h3>You</h3>
+				<p class="p-count count">0</p>
+
+			</div>	
+			<div class="computerScore">
+				<h3>Computer</h3>
+				<p class="c-count count">0</p>
+
+			</div>
+		</div>
+	
+		<div class="move">Choose your move</div>
+		
+		<!--Number of moves left before game ends -->
+		<div class="movesleft">Moves Left: 10 </div>
+		
+		<!--Options available to player to play game -->
+		<div class="options">
+			<button class="rock">🗿</button>
+			<button class="paper">🧻</button>
+			<button class="scissor">✂️</button>
+		</div>
+		
+		<!--Final result of game -->
+		<div class="result"></div>
+		
+		<!--Reload the game -->
+		<button class="reload"></button>
+
+	</section>
+
+	</div>
+
+	</div>
+
+	<div class="footer">
+        <div>Copyright &copy; Vivian Nicholls 2022</div>
+    </div>
+
+	<script src="./js/script.js" defer></script>
+	<script src="./js/scriptweather.js" defer></script>
+</body>
+</html>

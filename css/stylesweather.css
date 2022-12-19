@@ -1,0 +1,127 @@
+.wrapper.weatherapi {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+}
+
+.weather {
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    
+}
+
+.card {
+    /* background-image: url('https://source.unsplash.com/random/?landscape'); */
+    background: #4361ee6b;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 420px;
+    margin: auto;
+    font-size: 100%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+button {
+    border-radius: 50%;
+    border: none;
+    height: 2.2rem;
+    width: 2.2rem;
+    cursor: pointer;
+    outline: none;
+    background: #7c7c7c3b;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #c7c7c76b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4rem 1rem;
+    background: #c7c7c72b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    border-radius: 24px;
+    width: calc(100% - 4rem);
+
+
+}
+
+h2.city {
+    font-size: 119%;
+}
+h1.temp {
+    margin-top: .5rem;
+    margin-bottom: .6rem;
+    font-size: 130%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.description {
+    text-transform: capitalize;
+    margin-left: 0.3rem;
+}
+
+/* hide the dummy text */
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+}
+
+
+/* Responsive Design */
+@media screen and (min-width: 900px) {
+    .wrapper.weatherapi {
+        padding-top: 4.5rem;
+
+    }
+
+    .card {
+        height: 45vh;
+        padding-bottom: 1.7rem;
+    }
+    
+    h2.city {
+        font-size: 150%;
+    }
+
+    h1.temp {
+        font-size: 170%;
+        padding: 1.2rem;
+    }
+
+    .description {
+        font-size: 130%;
+    
+
+   
+
+    
+
+   
+}
